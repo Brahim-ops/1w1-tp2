@@ -1,0 +1,244 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  text-align: center;
+}
+
+
+.global{
+
+}
+h1{
+  margin: 0;
+  padding: 0;
+}
+.hero{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.hero__centre{
+  background-image: url(https://www.maisondelapresse.com/media/wysiwyg/one_piece.jpg);
+  width: 100%;
+  height: 933px;
+  background-size: cover; /* Adjusts image size to cover the element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.hero__h1{
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
+}
+.hero__h4{
+  margin-bottom: 20px;
+}
+.hero__p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#Horaire{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  table{
+    border-collapse: collapse;
+  }
+  th{
+    border: 1px solid red;
+    padding: 5px;
+    background-color: aquamarine;
+  }
+  .diagonal{
+    transform: rotate(45deg);
+    
+  }
+  .Photoshop{
+    background-color: brown;
+  }
+  .vertical{
+    transform: rotate(90deg);
+  }
+  .Volley{
+    background-color: aqua;
+  }
+  .Anglais{
+    background-color: bisque;
+  }
+  .Web{
+    background-color: cadetblue;
+  }
+  .Video{
+    background-color: chartreuse;
+  }
+  td{
+    padding: 5px;
+  }
+  thead{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  thead th{
+    transform: rotate(90deg);
+    background-color: transparent;
+    width: 3rem;
+  }
+  thead tr{
+    height: 100px;
+    background-color: beige;
+  }
+  tbody{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  tfoot{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+}
+#Inscription{
+  background-color: antiquewhite;
+  background-image: url(https://gear5world.com/cdn/shop/articles/mugiwara_one_piece_pirate.jpg?v=1706286113&width=1100);
+  background-size: cover; /* Adjusts image size to cover the element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%;
+  height: 933px;
+}
+.signup-form {
+  background: #ff4500; /* Luffy's red shirt */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+}
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #ffe600; /* Treasure gold */
+  text-shadow: 2px 2px 2px #000;
+}
+.signup-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ffe600; /* Treasure gold */
+}
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ffe600; /* Gold border */
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1em;
+}
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffe600; /* Gold button */
+  color: #ff4500; /* Red text for contrast */
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #000;
+}
+.signup-form button:hover {
+  background-color: #fcd307; /* Brighter gold */
+}
+
+#équipage{
+  background-color: bisque;
+  
+}
+#luffy{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 20%;
+}
+#zoro{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 20%;
+}
+#équipage h1{
+  text-align: center;
+}
+#section-4{
+  background-color: bisque;
+}
+#pied{
+  background-color: bisque;
+}
+a{
+  text-decoration: none;
+  color: white;
+  
+}
+#bouton{
+  position : fixed;
+  top: 20px;
+  right: 20px;
+}
+
+
+#chk-bouton{
+  display : none;
+}
+/*
+Ce sélecteur peut aussi fonctionner
+.entete__navigation:hover + .entete__navigation
+
+
+
+
+*/
+/*
+Ce sélecteur permet de cibler .ente__navigation à condition qu'il
+soit précéder par un checkbox côcher
+*/
+
+
+#chk-bouton:checked + .entete__navigation
+{
+  /* permet au menu de reprendre sa position naturel donc de devenir visible */
+  transform : translateX(0);
+}
+
+.entete__navigation {
+  /* on cache le menu en le glissant à l'extérieur de la fenêtre */
+  transform : translateX(200px); 
+  transition : transform .25s;
+
+  position : fixed;
+  top: 50px;
+  right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;;
+  background-color: #006;
+
+}
+
+.entete__navigation a {
+  text-decoration: none;
+      color : #fff;
+}

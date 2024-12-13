@@ -1,168 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labo #07</title>
+    <title>One piece (tp2)</title>
 </head>
+
 <body>
     <header id="entete" class="entete">
         <div class="global hero">
-            <div class="hero__centre">
-                <div class="hero__texte">
+            <div class="hero__centre"> 
                     <h1 class="hero__h1">One Piece</h1>
-                    <p class="hero__p">One Piece (ワンピース, Wan Pīsu?) est une série de shōnen mangas créée par Eiichirō Oda. Elle est prépubliée depuis le 22 juillet 1997 dans le magazine hebdomadaire Weekly Shōnen Jump, puis regroupée en tankōbon aux éditions Shūeisha depuis le 24 décembre 1997. 110 tomes sont commercialisés au Japon en novembre 2024.
-                    L'histoire suit les aventures de Monkey D. Luffy, un garçon dont le corps a acquis les propriétés du caoutchouc après avoir mangé par inadvertance un fruit du démon. Avec son équipage de pirates, appelé l'équipage de Chapeau de paille, Luffy explore Grand Line à la recherche du trésor ultime connu sous le nom de « One Piece » afin de devenir le prochain roi des pirates.
-                    </p>
-            <label for="chk-bouton" id="bouton">
-                <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=000" width="32" height="32">
-            </label>
-            <input type="checkbox" name="" id="chk-bouton">
-            <nav class="entete__navigation">
-                <a href="#accueil">Accueil</a>
-                <a href="#section-1">Horaire</a>
-                <a href="#section-2">Inscription</a>
-                <a href="#section-3">L'équipage</a>
-                <a href="#section-4">Section-4</a>
-            </nav>
-        </div>
-    </header>    
-        <section id="Horaire" class="Horaire">
-            <div class="global">
-                <h1>Horaire de Monkey D Luffy</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Lundi</th>
-                            <th>Mardi</th>
-                            <th>Mercredi</th>
-                            <th>Jeudi</th>
-                            <th>Vendredi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>8h</th>
-                           <th class="Video" rowspan="3">Video</th>
-                           <th class="Anglais" rowspan="4">
-                            <H2 class="vertical">Anglais</H2>
-                           </th>
-                           <th class="Video" rowspan="4">Video</th>
-                           <th class="Volley" rowspan="3">
-                            <h2 class="vertical">Volley</h2>
-                           </th>
-                           <th class="Web" rowspan="4">
-                            <h2 class="vertical">Web</h2>
-                           </th>
-                        </tr>
-                        <tr>
-                            <th>9h</th>
-                            
-                        </tr>
-            
-                        <tr>
-                            <th>10h</th>
-                            
-                        </tr>
-            
-                        <tr>
-                            <th>11h</th>
-                            
-                        </tr>
-            
-                        <tr>
-                            <th>12h</th>
-                            <th class="Photoshop" rowspan="4">
-                                <h2 class="diagonal">Photoshop</h2>
-                            </th>
-                            <td></td>
-                            <th class="Photoshop" rowspan="4">
-                                <h2 class="diagonal">Photoshop</h2>
-                            </th>
-                            
-                        </tr>
-            
-                        <tr>
-                            <th>13h</th>
-                            
-                        </tr>
-            
-                        <tr>
-                            <th>14h</th>
-                            
-                        </tr>
-            
-                        <tr>
-                            <th>15h</th>
-                            
-                        </tr>
-            
-                        <tr>
-                            <th>16h</th>
-                            <td rowspan="3"></td>
-                            <td rowspan="3"></td>
-                            <th class="Web" rowspan="3">Web</th>
-                        </tr>
-            
-                        <tr>
-                            <th>17h</th>
-                            
-                        </tr>
-            
-                        <tr>
-                            <th>18h</th>
-                            
-                        </tr>
-                    </tbody> 
-                    <tfoot>
-                        <tr>
-                        
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-        </section>
-        <section id="Inscription" class="section-2">
-            <div class="global">
-                <form class="signup-form" action="/submit-signup" method="POST">
-                    <h2>Join the Crew</h2>
-                    <label for="username">Pirate Name</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your pirate name" required>
-                    
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    
-                    <label for="password">Secret Code</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your secret code" required>
-                    
-                    <label for="confirm-password">Confirm Secret Code</label>
-                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your secret code" required>
-                    
-                    <button type="submit">Set Sail</button>
-                </form>
-            </div>
-        </section>
-        <section id="équipage" class="section-3">
-            <div class="global">
-                <h1>Les membres de l'équipage</h1>
-                <img src="assets/img/gear 5 wanter poster.jpg" id="luffy">
-                <figcaption id="luffy">Le capitaine</figcaption>
-                <img src="assets/img/Zoro wanted poster.avif" id="zoro">
-                <figcaption id="zoro">Le bras droit</figcaption >
-            </div>
-        </section>
-        <section id="section-4" class="section-4">
-            <div class="global">
-                <h1>section-4</h1>
-            </div>
-        </section>
-    <footer id="pied" class="section-5">
+                    <h2 class="hero__h2">One Piece est une série de shōnen mangas crée par Eiichirō
+                        Oda. Elle est prépubliée depuis le 22 juillet 1997 dans le magazine hebdomadaire Weekly Shōnen
+                        Jump, puis regroupée en tankōbon aux éditions Shūeisha depuis le 24 décembre 1997. 110 tomes
+                        sont commercialisés au Japon en novembre 2024.
+                        L'histoire suit les aventures de Monkey D. Luffy, un garçon dont le corps a acquis les
+                        propriétés du caoutchouc après avoir mangé par inadvertance un fruit du démon. Avec son équipage
+                        de pirates, appelé l'équipage de Chapeau de paille, Luffy explore Grand Line à la recherche du
+                        trésor ultime connu sous le nom de « One Piece » afin de devenir le prochain roi des pirates.
+                    </h2>
+                            <p class="hero__texte">Tp-2,, Choubane Brahim 582-1W1 - Mise en page Web, Techniques d'intégration, Collège de Maisonneuve, github.com/Brahim-ops, Automne 2024</p>
+                            <label for="chk-bouton" id="bouton">
+                                <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=000" width="32"
+                                    height="32">
+                            </label>
+                            <input type="checkbox" name="" id="chk-bouton">
+                            <nav class="entete__navigation">
+                                <a href="#entete">Accueil</a>
+                                <a href="#Horaire">Horaire</a>
+                                <a href="#Inscription">Inscription</a>
+                                <a href="#équipage">Galerie</a>
+                                <a href="#article">Article</a>
+                                <a href="#Video">Videos</a>
+                                <a href="#footer">Pied de page</a>
+                            </nav>
+                </div>
+    </header>
+    <section id="Horaire" class="Horaire">
         <div class="global">
-            <h1>Pied de page</h1>
+            <h1>Horaire de Monkey D Luffy</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jour</th>
+                        <th>Activités</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lundi</td>
+                        <td>Entraînement avec Zoro<br>Réunion d'équipe (Stratégie des Pirates)</td>
+                    </tr>
+                    <tr>
+                        <td>Mardi</td>
+                        <td>Aventure pour trouver un trésor<br>Combat contre les Marines</td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>Jour de repos (Manger de la viande)<br>Passer du temps avec Chopper</td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td>Navigation sur la Grand Line<br>Visiter une nouvelle île</td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td>Combat contre un nouvel ennemi<br>Célébration de la victoire avec l'équipage</td>
+                    </tr>
+                    <tr>
+                        <td>Samedi</td>
+                        <td>Pratique du Haki<br>Explorer des eaux inconnues</td>
+                    </tr>
+                    <tr>
+                        <td>Dimanche</td>
+                        <td>Jour de repos (Manger de la viande)<br>Planifier la prochaine aventure</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="Inscription" class="section-2">
+        <div class="global">
+            <form class="signup-form" action="/submit-signup" method="POST">
+                <h2>Join the Crew</h2>
+                <label for="username">Pirate Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter your pirate name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Secret Code</label>
+                <input type="password" id="password" name="password" placeholder="Enter your secret code" required>
+
+                <label for="confirm-password">Confirm Secret Code</label>
+                <input type="password" id="confirm-password" name="confirm-password"
+                    placeholder="Confirm your secret code" required>
+
+                <button type="submit">Set Sail</button>
+            </form>
+        </div>
+    </section>
+    <section id="équipage" class="section-3">
+        <h1>Galerie</h1>
+        <div class="global  équipage">
+            <img src="assets/img/gear 5 wanter poster.jpg" id="luffy">
+            <img src="assets/img/Zoro wanted poster.avif" id="zoro">
+            <img src="assets/img/Roger.jpg" id="Roger">
+            <img src="assets/img/Shanks wanted poster.jpg" id="Shanks">
+            <img src="assets/img/Whitebeard.jpg" id="Whitebeard">
+            <img src="assets/img/Brook.jpg" alt="">
+            <img src="assets/img/katakuri.jpg" alt="">
+            <img src="assets/img/Law.png" alt="">
+            <img src="assets/img/king.jpg" alt="">
+            <img src="assets/img/ussop.webp" alt="">
+        </div>
+    </section>
+    <section id="article" class="section-4">
+    <div class="global">
+        <article class="article">
+            <h1>Articles</h1>
+            <figure>
+                <figcaption>Dieu du soleil</figcaption>
+                <img src="assets/img/Luffy.webp">
+            </figure>
+            <div class="article-p">
+                <p>Monkey D. Luffy est un pirate joyeux, déterminé et animé par un rêve colossal : devenir le Roi des
+                    Pirates.</p>
+                <p>Avec une personnalité simple mais magnétique, il inspire tous ceux qu’il rencontre par son optimisme
+                    inébranlable et sa foi inconditionnelle en ses amis.</p>
+                <p>Luffy valorise la liberté avant tout et défend ses convictions avec une volonté de fer, refusant de
+                    plier face à l’injustice ou à la cruauté.</p>
+                <p>Derrière son attitude parfois naïve et enfantine se cache un leader charismatique, capable de rallier
+                    des alliés improbables et de surmonter des obstacles insurmontables.</p>
+                <p>Sa force, sa résilience et son amour indéfectible pour son équipage font de lui un capitaine hors du
+                    commun.</p>
+
+            </div>
+        </article>
+
+        <article class="article">
+            <figure>
+                <figcaption>Roi de l'enfer</figcaption>
+                <img src="assets/img/Zoro.webp">
+            </figure>
+            <div class="article-p">
+                <p>Roronoa Zoro est un épéiste stoïque et redoutable, animé par une ambition sans faille : devenir le
+                meilleur sabreur au monde.</p>
+                <p>Loyal et dévoué, il est le bras droit de Luffy et incarne la force tranquille de l’équipage des
+                Mugiwara.</p>
+                <p>Son sens aigu de l’honneur et sa discipline inébranlable contrastent avec son penchant pour se perdre
+                facilement ou son amour pour l’alcool, ce qui le rend à la fois intimidant et attachant.</p>
+                <p>Zoro est prêt à tout sacrifier, y compris sa vie, pour protéger ses amis et son rêve, et il fait
+                preuve d'une détermination surhumaine face à l’adversité, illustrant une endurance et une volonté
+                exemplaires.</p>
+            </div>
+        </article>
+
+        <article class="article">
+            <figure>
+                <figcaption>Démon céleste</figcaption>
+                <img src="assets/img/Donquixote_Doflamingo_Manga.webp">
+            </figure>
+            <div class="article-p">
+                <p>Donquixote Doflamingo est un personnage complexe, charismatique et profondément cruel, animé par une
+                    soif insatiable de pouvoir et un mépris cynique pour le monde.</p>
+                <p>Manipulateur et stratège redoutable, il domine ses ennemis autant par sa force brute que par son
+                    intelligence machiavélique.</p>
+                <p>Manipulateur et stratège redoutable, il domine ses ennemis autant par sa force brute que par son
+                    intelligence machiavélique.</p>
+                <p>Cette dualité alimente son nihilisme et son désir de chaos, le poussant à bâtir un empire criminel
+                    impitoyable.</p>
+                <p>Doflamingo est un leader tyrannique mais charismatique, capable d'inspirer une loyauté féroce chez
+                    ses subordonnés tout en utilisant sans scrupules les autres comme des pions dans son jeu cruel.</p>
+
+            </div>
+        </article>
+
+        <article class="article">
+            <figure>
+                <figcaption>Roi des âmes</figcaption>
+                <img src="assets/img/Brook_Manga.webp">
+            </figure>
+            <div class="article-p">
+                <p>Brook est un musicien excentrique et joyeux, connu pour son apparence squelettique et son humour
+                    décalé, souvent centré sur des blagues macabres.</p>
+                <p>Malgré son penchant pour le comique, il est profondément marqué par un passé tragique, ayant perdu
+                    son ancien équipage et passé des décennies seul avant de rejoindre les Mugiwara.</p>
+                <p>Sa résilience et sa passion pour la musique font de lui un symbole d'espoir et de joie, apportant
+                    légèreté et réconfort à ses compagnons.</p>
+                <p>Derrière son rire et son énergie, Brook est un personnage sage et réfléchi, toujours prêt à protéger
+                    ses amis avec une loyauté inébranlable.</p>
+                <p>Sa signature musicale et son rôle d’épéiste le rendent unique, mêlant art et combat avec élégance.
+                </p>
+            </div>
+        </article>
+    </section>
+    </div>
+    <section id="Video" class="section-5">
+        <div class="global">
+            <h1>Videos</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uB8cPQiNDok?si=I9UPVx-MPmdAekLz"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pO7-2a2RG1A?si=YCGFw9o-VzXKWApH"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1CyD0cr6k6w?si=txVzWXgtux407CIm"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/scPBmrzdD0g?si=hK-cnQu8TSrPaCW_"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/vfyvwpg-gGA?si=IuW2WWEoeI46HELM" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+            </iframe>
+
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/r_1N1_0Pmyw?si=1zSCusU7zNCmC4EE" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+            </iframe>
+
+        </div>
+    </section>
+    <footer id="footer" class="section-6">
+            <h1 class="footer__titre">Pied de page</h1>
+            <div class="footer-container">
+                <div class="footer-text">
+            <h1>Adresse du Collège</h1>
+            <p>Collège de Maisonneuve</p>
+            <p>3800 Rue Sherbrooke E, Montréal, QC H1X 2A2, Canada</p>
+                </div>
+                <div class="footer-text">
+                <ul class="footer-social">
+                    <h1>Médias Sociaux</h1>
+                    <li><img src="assets/img/facebook_32.png" class="Facebook" alt="facebook">
+                        <img src="assets/img/instagram_32.png" class="Instagram" alt="instagram">
+                        <img src="assets/img/youtube_32.png" class="Youtube" alt="youtube">
+                    </li>
+                </ul>
+                </div>
+            <div class="footer-text">
+                <h1>Description du département</h1>
+                <p>Le département de Techniques d'intégration multimédia offre une</p>
+                    <p>formation complète en développement web, design graphique, et</p> 
+                    <p>production multimédia.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Avis de confidentialité | Privacy Notice</a>
+            </div>
+            
+        </div>
+        <div class="footer-text">
+            "Wealth, fame, power... The world had it all. But one pirate crew sails toward the ultimate treasure!"<br>
+            &copy; 2024 Straw Hat Pirates Fansite. All rights reserved.
         </div>
     </footer>
 </body>
+
 </html>

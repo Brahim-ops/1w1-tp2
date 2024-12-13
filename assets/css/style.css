@@ -1,153 +1,159 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: white;
+h1 {
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-
-.global{
-
-}
-h1{
-  margin: 0;
-  padding: 0;
-}
-.hero{
+.hero__centre {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
-}
-.hero__centre{
-  background-image: url(https://www.maisondelapresse.com/media/wysiwyg/one_piece.jpg);
+  align-items: center;
+  text-align: left;
+  background-image: url(https://img.asmedia.epimg.net/resizer/v2/FJ54C73VRJMUZCAXXU7B6RKYNM.jpg?auth=a653163568169f55533323fbe5d5e02e8bf7afbca945209e58757f8556c791e4&width=1472&height=828&smart=true);
   width: 100%;
   height: 933px;
-  background-size: cover; /* Adjusts image size to cover the element */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
 
-.hero__h1{
+.hero__h1 {
   font-size: 3rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 2px;
-}
-.hero__h4{
-  margin-bottom: 20px;
-}
-.hero__p{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  letter-spacing: 2px;
+  color: white;
 }
 
-#Horaire{
+.hero__h2 {
+  font-size: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 2px;
+  color: white;
+}
+.hero__texte{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 20px;
+  color: white;
+}
+
+.Horaire {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: bisque;
-  table{
-    border-collapse: collapse;
-  }
-  th{
-    border: 1px solid red;
-    padding: 5px;
-    background-color: aquamarine;
-  }
-  .diagonal{
-    transform: rotate(45deg);
-    
-  }
-  .Photoshop{
-    background-color: brown;
-  }
-  .vertical{
-    transform: rotate(90deg);
-  }
-  .Volley{
-    background-color: aqua;
-  }
-  .Anglais{
-    background-color: bisque;
-  }
-  .Web{
-    background-color: cadetblue;
-  }
-  .Video{
-    background-color: chartreuse;
-  }
-  td{
-    padding: 5px;
-  }
-  thead{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  thead th{
-    transform: rotate(90deg);
-    background-color: transparent;
-    width: 3rem;
-  }
-  thead tr{
-    height: 100px;
-    background-color: beige;
-  }
-  tbody{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  tfoot{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-}
-#Inscription{
-  background-color: antiquewhite;
-  background-image: url(https://gear5world.com/cdn/shop/articles/mugiwara_one_piece_pirate.jpg?v=1706286113&width=1100);
-  background-size: cover; /* Adjusts image size to cover the element */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #f4e1d2;
+  color: #333;
+  border-radius: 10px;
   height: 933px;
 }
+
+.Horaire th,
+.Horaire td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.Horaire th {
+  background-color: #ff6347;
+  /* Rouge de Luffy */
+  color: white;
+  font-size: 1.3em;
+}
+
+.Horaire td {
+  background-color: #f3a847;
+  /* Orange vif de Luffy */
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.Horaire tr:nth-child(even) td {
+  background-color: #e57373;
+  /* Rouge légèrement plus clair pour les lignes paires */
+}
+
+.Horaire tr:hover td {
+  background-color: #ff4500;
+  /* Changement de couleur au survol */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .Horaire th,
+  .Horaire td {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+
+#Inscription {
+  background-color: antiquewhite;
+  background-image: url(https://gear5world.com/cdn/shop/articles/mugiwara_one_piece_pirate.jpg?v=1706286113&width=1100);
+  background-size: cover;
+  /* Adjusts image size to cover the element */
+  background-position: center;
+  /* Centers the image */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  width: 100%;
+  height: 933px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .signup-form {
-  background: #ff4500; /* Luffy's red shirt */
+  background: #ff4500;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  width: 300px;
+  width: 250px;
+  display: flex;
+  flex-direction: column
 }
+
 .signup-form h2 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.8em;
-  color: #ffe600; /* Treasure gold */
+  color: #ffe600;
   text-shadow: 2px 2px 2px #000;
 }
+
 .signup-form label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
-  color: #ffe600; /* Treasure gold */
+  color: #ffe600;
 }
+
 .signup-form input {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 2px solid #ffe600; /* Gold border */
+  border: 2px solid #ffe600;
   border-radius: 5px;
   background-color: #fff;
   color: #000;
   font-size: 1em;
 }
+
 .signup-form button {
   width: 100%;
   padding: 12px;
-  background-color: #ffe600; /* Gold button */
-  color: #ff4500; /* Red text for contrast */
+  background-color: #ffe600;
+  color: #ff4500;
   font-size: 1.1em;
   font-weight: bold;
   border: none;
@@ -156,50 +162,198 @@ h1{
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #000;
 }
+
 .signup-form button:hover {
-  background-color: #fcd307; /* Brighter gold */
+  background-color: #fcd307;
 }
 
-#équipage{
-  background-color: bisque;
+#équipage {
+  background-color: rgba(255, 228, 150);
+}
+
+.global.équipage {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+  gap: 20px; 
   
 }
-#luffy{
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 20%;
+
+.global.équipage img {
+  width: 10%;
+  flex : 1 0 300px;
 }
-#zoro{
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 20%;
+
+#équipage h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-#équipage h1{
+
+
+/* articles */
+.article {
+  display: flex;
+  align-content: center;
+  background-color: burlywood;
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+
+.article figure {
+  flex: 0 0 500px;
+  transform: scale(.9);
+  transition: transform .25s, filter .25s;
+}
+
+.article figure:hover {
+  transform: scale(1);
+  filter: grayscale(0);
+}
+
+.article figure img {
+  width: 100%;
+  flex : 1 0 300px;
+}
+
+.article:nth-of-type(odd) figure {
+  order: 9;
+}
+
+.article-p {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:black;
+  flex : 1 0 300px;
+}
+
+.article h1 {
+  font-size: 3rem;
+  text-align: center;
+  width: 10%;
+  flex : 1 0 300px;
+}
+
+figcaption {
+  font-size: 2.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
 }
-#section-4{
-  background-color: bisque;
-}
-#pied{
-  background-color: bisque;
-}
-a{
-  text-decoration: none;
-  color: white;
+
+/* videos */
+#Video{
+  background-color: burlywood;
+  min-height: 900px;
+  gap: 25px;
   
 }
-#bouton{
-  position : fixed;
+iframe{
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* footer */
+footer {
+  background-color: #001f3f;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+/* footer container */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* links */
+.footer-links {
+  margin-top: 20px;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+ul{
+  list-style: none;
+  }
+
+.footer-links a:hover {
+  color: #ffdd57;
+}
+
+/* social media */
+.footer-social {
+  flex: 1 1 30%;
+  text-align: right;
+}
+
+.footer-social img {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.footer-social h1{
+  margin-bottom: 30px;
+}
+
+.footer-social img:hover {
+  color: #ffdd57;
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-links, .footer-social {
+      flex: 1 1 100%;
+      margin-bottom: 15px;
+  }
+
+
+  .footer-social {
+      text-align: center;
+  }
+}
+
+
+#bouton {
+  position: fixed;
   top: 20px;
   right: 20px;
 }
 
 
-#chk-bouton{
-  display : none;
+#chk-bouton {
+  display: none;
 }
+
 /*
 Ce sélecteur peut aussi fonctionner
 .entete__navigation:hover + .entete__navigation
@@ -214,18 +368,17 @@ soit précéder par un checkbox côcher
 */
 
 
-#chk-bouton:checked + .entete__navigation
-{
+#chk-bouton:checked+.entete__navigation {
   /* permet au menu de reprendre sa position naturel donc de devenir visible */
-  transform : translateX(0);
+  transform: translateX(0);
 }
 
 .entete__navigation {
   /* on cache le menu en le glissant à l'extérieur de la fenêtre */
-  transform : translateX(200px); 
-  transition : transform .25s;
+  transform: translateX(200px);
+  transition: transform .25s;
 
-  position : fixed;
+  position: fixed;
   top: 50px;
   right: 20px;
 
@@ -233,12 +386,13 @@ soit précéder par un checkbox côcher
   flex-direction: column;
   justify-content: space-around;
   gap: 20px;
-  padding: 20px;;
+  padding: 20px;
+  ;
   background-color: #006;
 
 }
 
 .entete__navigation a {
   text-decoration: none;
-      color : #fff;
+  color: #fff;
 }
